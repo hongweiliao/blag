@@ -1,0 +1,17 @@
+{% extends 'web/base.html' %}
+
+    {% block title %}
+        {{ article.title }}
+        {% endblock %}
+    {% block desc %}
+        {{ article.desc }}
+        {% endblock %}
+    {% block item %}
+        {{ article.item.name }}
+        {% endblock %}
+    {% block time %}
+        {{ article.create_time }}
+        {% endblock %}
+    {% block new_content %}
+        {{ article.content |safe }}
+        {% endblock %}
